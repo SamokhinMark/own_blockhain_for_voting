@@ -1,0 +1,26 @@
+.vote_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.vote_candidates {
+    font-size: 20px;
+}
+.vote_candidates__wrapper {
+	display: flex;
+	gap: 20px;
+}
+.vote_candidates__name {
+	text-align: left;
+	display: block;
+	min-width: 250px;
+	font-weight: 700;
+}
+.vote_candidates__address {
+    display: block;
+    margin-left: 20px;
+}
+.btn_vote {
+	margin: 20px auto;
+}

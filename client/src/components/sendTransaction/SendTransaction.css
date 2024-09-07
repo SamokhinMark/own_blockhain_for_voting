@@ -1,0 +1,87 @@
+.modal {
+    z-index: 100;
+    display: block;
+    position: fixed;
+    background-color: #fff;
+    width: 500px;
+    height: 700px;
+    padding: 25px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+}
+.bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    background-color: rgba(0,0,0, .55);
+}
+.close {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    float: right;
+    position: relative;
+    cursor: pointer;
+}
+.open {
+    overflow: hidden;
+}
+
+.hidden {
+    display: none;
+}
+
+.close::before, .close::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: black;
+}
+
+.close::before {
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.close::after {
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+.modal_title {
+    display: inline-block;
+    font-size: 27px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.modal_label {
+    font-size: 23px;
+    display: block;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.modal_input {
+    padding: 10px;
+    text-align: left;
+    font-size: 20px;
+    color: white;
+    font-weight: 200;
+    background-color: #5b5454;
+    resize: none;
+    width: 350px;
+    margin-bottom: 20px;
+}
+#modal_receiver {
+    white-space: pre-wrap;
+    height: 200px;
+}
+#modal_amount, #modal_fees {
+    height: 60px;
+}

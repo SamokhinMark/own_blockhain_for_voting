@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    font-family: 'Mukta', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+.container {
+    padding: 0;
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.link {
+    text-decoration: none;
+}

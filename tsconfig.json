@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "node",
+	"outDir": "dist",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+	"resolveJsonModule": true,
+  },
+  "include": [
+    "master_node/**/*",
+    "node/**/*",
+    "utils/**/*"
+  ],
+  "types": ["express"]
+}

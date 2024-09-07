@@ -1,0 +1,35 @@
+.login {
+    margin-top: 50px;
+}
+
+.login_form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.login_label {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+#login_input {
+    padding: 10px;
+    text-align: left;
+    width: 430px;
+    height: 200px;
+    color: white;
+    font-weight: 200;
+    background-color: #5b5454;
+    resize: none;
+}
+.login_btn {
+    display: block;
+    margin: 20px auto 0;
+    width: 100px;
+    height: 40px;
+    background-color: white;
+    font-weight: 300;
+    text-decoration: none;
+    cursor: pointer;
+}

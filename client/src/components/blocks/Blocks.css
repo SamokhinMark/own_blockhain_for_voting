@@ -1,0 +1,27 @@
+.blocks__info {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 17px;
+    background: #e0e0e0;
+    box-shadow:  -10px 10px 48px #b1b1b1,
+    10px -10px 48px #ffffff;
+}
+
+.blocks__count {
+    text-align: left;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+th {
+    font-size: 22px;
+}
+td {
+    font-size: 20px;
+}
+th, td {
+    text-align: left;
+}

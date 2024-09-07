@@ -1,0 +1,51 @@
+.main {
+    position: relative;
+    padding-left: 150px;
+    height: 850px;
+}
+
+.main__background {
+    z-index: -1;
+    position: absolute;
+    top: 70px;
+    width: 1400px;
+    height: 900px;
+    background-image: url("../../assets/imgs/background3.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 50px;
+    color: rgba(49, 53, 70, 1);
+}
+.main__title {
+    text-align: left;
+}
+
+.subtitle {
+    font-weight: 700;
+    font-size: 25px;
+    color: rgba(49, 53, 70, 1);
+}
+.main__subtitle {
+    text-align: left;
+}
+
+.btn {
+    display: block;
+    padding: 7px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: rgba(49, 53, 70, 1);
+
+    cursor: pointer;
+}
+.main__btn {
+    width: 130px;
+}

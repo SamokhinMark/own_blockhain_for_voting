@@ -1,0 +1,27 @@
+.header__wrapper {
+    height: 80px;
+    position: relative;
+    padding: 15px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 70px;
+}
+.header__block {
+    color: rgba(49, 53, 70, 1);
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    width: 80px;
+    height: 80px;
+    background-image: url('../../assets/imgs/logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

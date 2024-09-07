@@ -1,0 +1,9 @@
+.chapters {
+    height: 500px;
+}
+
+.chapters__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

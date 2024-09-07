@@ -1,0 +1,9 @@
+.layout {
+    margin-top: 50px;
+}
+.layout_wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+}

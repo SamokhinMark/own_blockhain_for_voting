@@ -1,0 +1,36 @@
+.chapter {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    height: 300px;
+}
+
+.chapter__logo {
+    display: inline-block;
+    float: left;
+    width: 270px;
+    height: 130px;
+}
+
+.chapter__title {
+    font-size: 30px;
+    text-align: left;
+    font-weight: 800;
+    color: rgba(49, 53, 70, 1);
+}
+
+.chapter__descr {
+    font-size: 14px;
+    text-align: left;
+    font-weight: 600;
+    color: rgba(49, 53, 70, 0.8);
+}
+
+.chapter__size {
+    font-weight: 600;
+    font-size: 16px;
+    text-align: left;
+    color: rgba(49, 53, 70, 1);
+}
