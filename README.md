@@ -10,9 +10,9 @@ Before you start, you should already have Node.js and TypeScript installed (Goog
 ## Installation
 
 Since we need two nodes, we will clone this project twice.
-<pre><code>git clone https://github.com/SamokhinMark/blockchain_for_elections.git node_1</code></pre>
+<pre><code>git clone https://github.com/SamokhinMark/own_blockhain_for_voting.git node_1</code></pre>
 
-<pre><code>git clone https://github.com/SamokhinMark/blockchain_for_elections.git node_2</code></pre>
+<pre><code>git clone https://github.com/SamokhinMark/own_blockhain_for_voting.git node_2</code></pre>
 
 After that, we build the projects.
 <pre><code>cd node_1 && npm run build-project && cd ..</code></pre>
@@ -48,7 +48,7 @@ To create new candidates, at least one server node must be running.
 
 1. First, we send a GET-request to the endpoint: `http://localhost:8000/create-wallet` and copy the `address` from the response we received.
    
-   ![image](https://github.com/user-attachments/assets/1e0a12da-910f-4ada-bbbd-adba3433877b)
+   ![image](https://github.com/user-attachments/assets/f129fe9c-390f-4687-987a-c7cfd0cbdb3b)
 
 2. After that, create a new POST-request to the endpoint: `http://localhost:8000/add-candidate`. In the body of the request, we specify the following JSON:
 <pre><code># POST-request to http://localhost:8000/add-candidate
@@ -57,7 +57,7 @@ To create new candidates, at least one server node must be running.
     "address": "Insert the address obtained from the previous request"
 }</code></pre>
 
-   ![image](https://github.com/user-attachments/assets/a79f1c35-7b60-4045-8e8f-254e89447b58)
+   ![image](https://github.com/user-attachments/assets/c3de69d9-8514-4869-89c6-e23b6258ff88)
 
 The first candidate is ready repeat these two steps as many times as you need.
 
@@ -67,4 +67,12 @@ Now everything is ready for testing. We navigate to our client website (which we
 
 ### Also, keep in mind that a block won't be generated if the master node is not running! (we started it in terminal 1). 🚨🚨🚨
 
-![Untitled Project-min](https://github.com/user-attachments/assets/b4266121-31e5-4fba-9fe2-f9fc3e5ccdbc)
+![Untitled Project-min](https://github.com/user-attachments/assets/c4c40836-a4fa-4cf0-ad71-88bb4f0a372c)
+
+## Things that should be changed by you
+
+The About page, the blockchain name, and the main logo of the site.
+
+## How it can be improved
+
+Add transaction signing. Integrate a pseudo-database containing voters' names and surnames, so that after a voter creates a wallet and casts their vote, they won’t be able to create a new one for repeat voting. Rewrite the node synchronization mechanism, as I was in a hurry and it was implemented strictly: the node with the larger database is the one the newly connected node will synchronize with.
